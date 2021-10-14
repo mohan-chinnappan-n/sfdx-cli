@@ -190,7 +190,6 @@ jobs:
       - run: yarn promote-docker
     environment:
       NPM_CONFIG_PREFIX: "~/.npm-global"
-      PATH: "~/.npm-global/bin:$PATH"
 
   promote-verify:
     docker:
@@ -384,7 +383,7 @@ workflows:
     triggers:
       - schedule:
           # Thursday mornings at 10am mountain
-          cron: '58 17 * * 4'
+          cron: '2 18 * * 4'
           filters:
             branches:
               only:
