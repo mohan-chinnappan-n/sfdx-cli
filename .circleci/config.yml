@@ -383,11 +383,11 @@ workflows:
     triggers:
       - schedule:
           # Thursday mornings at 10am mountain
-          cron: '42 17 * * 4'
+          cron: '46 17 * * 4'
           filters:
             branches:
               only:
-                - main
+                - circleci-editor/859/main
     jobs:
       # start the change case
       - change-case-start:
