@@ -189,7 +189,8 @@ jobs:
       - run: echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
       - run: yarn promote-docker
     environment:
-      NPM_CONFIG_PREFIX: "/home/node/.npm-global"
+      NPM_CONFIG_PREFIX: "~/.npm-global"
+      PATH: "~/.npm-global/bin:$PATH"
 
   promote-verify:
     docker:
@@ -383,7 +384,7 @@ workflows:
     triggers:
       - schedule:
           # Thursday mornings at 10am mountain
-          cron: '46 17 * * 4'
+          cron: '58 17 * * 4'
           filters:
             branches:
               only:
