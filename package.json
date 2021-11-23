@@ -18,6 +18,7 @@
     "oclif.manifest.json",
     "dist/**/*.js",
     "scripts/include-sf.js",
+    "scripts/postinstall.js",
     "!dist/**/*.test.js"
   ],
   "oclif": {
@@ -207,7 +208,7 @@
     "pack:tarballs": "oclif pack:tarballs",
     "pack:verify": "sf-release cli:tarballs:verify",
     "pack:win": "oclif pack:win --additional-cli sf",
-    "postinstall": "npm install @salesforce/cli -g",
+    "postinstall": "./scripts/postinstall.js",
     "postpack": "shx rm -f oclif.manifest.json",
     "posttest": "yarn test:deprecation-policy ",
     "prepack": "yarn compile && yarn lint && yarn oclif-artifacts",
