@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const shell = require('shelljs');
+const cp = require('child_process');
 
 function isGlobalNpmInstall() {
   return !!process.env.npm_config_global;
@@ -14,5 +14,5 @@ function isGlobalYarnInstall() {
 }
 
 if (isGlobalNpmInstall() || isGlobalYarnInstall()) {
-  shell.exec('npm install @salesforce/cli --global');
+  cp.spawn('npm install @salesforce/cli --global', { stdio: 'inherit', shell: true });
 }
