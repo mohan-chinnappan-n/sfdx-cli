@@ -1097,7 +1097,7 @@
     chalk "^2.4.2"
     cli-ux "^4.9.3"
 
-"@salesforce/core@2.31.0", "@salesforce/core@^2.1.4", "@salesforce/core@^2.2.0", "@salesforce/core@^2.23.4", "@salesforce/core@^2.29.0", "@salesforce/core@^2.31.0":
+"@salesforce/core@2.31.0":
   version "2.31.0"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-2.31.0.tgz#cdeaa9968060afb52f40c12bf5a4f9844a2a1909"
   integrity sha512-ROEjX/M0ZHpGlmRfNUoDKsE4ppOZUU5Hcl3XHr2pCO7F505imAmhKg8I+XfGSxXyj4bL/kftkNTK5xFffJ+6mw==
@@ -1141,7 +1141,7 @@
     semver "^7.3.5"
     ts-retry-promise "^0.6.0"
 
-"@salesforce/core@2.33.1":
+"@salesforce/core@2.33.1", "@salesforce/core@^2.1.4", "@salesforce/core@^2.2.0", "@salesforce/core@^2.23.4", "@salesforce/core@^2.29.0", "@salesforce/core@^2.31.0":
   version "2.33.1"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-2.33.1.tgz#23c22953174ad0e809b2f1c7b2881b5ba8a89d9c"
   integrity sha512-jKVFYEvlV+loBoau5heBOVXmzsPO+RbYh6SPybJK6xF7khQmzu7+WAQbikY2eY8VaXcded2kka8L/FKuD/LKBg==
@@ -1251,10 +1251,10 @@
     chalk "^4.1.0"
     tslib "^1"
 
-"@salesforce/plugin-auth@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@salesforce/plugin-auth/-/plugin-auth-1.8.0.tgz#0064a48ce19c2793e04071b93e6eb609bb8ea40b"
-  integrity sha512-yevxN8nzAwYRY3jXVy8hyUHAM/F3bDRupY6GyulYosEooo6noZkIA4fj/xclRRDGOiSzHOGsLH8RLd01BuaypQ==
+"@salesforce/plugin-auth@1.8.2":
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/@salesforce/plugin-auth/-/plugin-auth-1.8.2.tgz#4edea8d0b1a2a022dde3fd1bfd8818c241c66dc2"
+  integrity sha512-ROHxuEHsMv5uh1LA6BWqvYEx2ajqYHzcX6FDHP0TisEARO5yIq+2Mvhl2ob2jENsDjHyXurA2U1m/MVimu7qbw==
   dependencies:
     "@oclif/config" "^1.18.1"
     "@salesforce/command" "^4.2.0"
